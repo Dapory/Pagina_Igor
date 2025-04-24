@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text area</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <h2>
+            FORMULARIO DE CONTACTO
+        </h2>
+        <fieldset>
+            <legend>INFORMACION BASICA</legend>
+            <div class="form_imput">
+                <label for="Nombre">Nombre o apodo</label>
+                <input type="text" placeholder="Daniel / Dapory" id="Nombre">
+            </div>
+            <div class="form_imput">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="ejemplo@gmail.com" id="Email">
+            </div>
+            <div class="form_imput">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" placeholder="***********" id="contraseña">
+            </div>
+        </fieldset>
+        <div class="form_imput">
+            <label>Tipo de Usuario
+                <select>
+                    <option>Seguidor/a</option>
+                    <option>Empresa</option>
+                    <option>Otro...</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form_imput">
+            <label>Codigo de referente
+                <input list="referente">
+                <datalist id="referente">
+                    <option>DANI001</option>
+                    <option>DANI002</option>
+                    <option>DANI003</option>
+                </datalist>
+            </label>
+        </div>
+
+        <div class="form_imput">
+            <label for="Mensaje">Mensaje</label>
+            <textarea placeholder="Deja aqui tus reseñas de la pagina" id="Mensaje"></textarea>
+        </div>
+
+        <div class="form_imput">
+            <label>Acepto los <a href="terms.html" target="_blank" rel="noreferrer"> terminos y condiciones</a>
+                <input type="checkbox" class="checkbox"></input>
+            </label>
+        </div>
+        <div class="form_imput" id="descarga">
+            <label>Descarga los <a href="terms.html" download> terminos y condiciones</a>
+            </label>
+        </div>
+
+        <div class="form_imput">
+            <button type="button"> Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
+
